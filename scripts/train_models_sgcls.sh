@@ -31,7 +31,7 @@ elif [ $1 == "3" ]; then
         -lr 5e-3 -ngpu 1 \
         -ckpt ./checkpoints_best/vgdet/vg-faster-rcnn.tar \
         -save_dir  ./checkpoints/${MODEL_NAME}/ \
-        -nepoch 50 -p 100 -use_bias \
+        -nepoch 6 -p 100 -use_bias \
         -bg_num_rel 2 # -debug -val_size 20 -p 20 -b 3
 elif [ $1 == "4" ]; then
     export CUDA_VISIBLE_DEVICES=0
@@ -45,7 +45,7 @@ elif [ $1 == "4" ]; then
         -lr 5e-3 -ngpu 1 \
         -ckpt ./checkpoints_best/vgdet/vg-faster-rcnn.tar \
         -save_dir  ./checkpoints/${MODEL_NAME}/ \
-        -nepoch 50 -p 100 \
+        -nepoch 6 -p 100 \
         -bg_num_rel 2 # -debug -val_size 20 -p 20 -b 16
 fi
 
