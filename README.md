@@ -3,7 +3,10 @@
 
 This repository contains data and code for the paper “One-shot Scene Graph Generation”. This code is based on the [neural-motifs](https://github.com/rowanz/neural-motifs).
 
-# Setup
+## Framework
+<div align=center><img width="800" height="565" src=docs/framework_ver3_00.png/></div>
+
+## Setup
 
 
 0. Install python3.6 and pytorch 3. I recommend the [Anaconda distribution](https://repo.continuum.io/archive/). To install PyTorch if you haven't already, use
@@ -22,4 +25,20 @@ This repository contains data and code for the paper “One-shot Scene Graph Gen
 5. Evaluate: Refer to the scripts ./scripts/eval_models_sgcls.sh.
 6. Scripts of models are in lib/models/
 
-Feel free to open an issue if you encounter trouble getting it to work!
+## Help
+
+Feel free to ping me if you encounter trouble getting it to work!
+## Bibtex
+
+```
+@inproceedings{sgg:oneshot,
+  author    = {Yuyu Guo and
+               Jingkuan Song and
+               Lianli Gao and
+               Heng Tao Shen},
+  title     = {One-shot Scene Graph Generation},
+  booktitle = {ACM MM},
+  pages     = {3090--3098},
+  year      = {2020}
+}
+```
